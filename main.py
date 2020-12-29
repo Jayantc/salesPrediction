@@ -170,11 +170,3 @@ coef = pd.Series(model.feature_importances_, X.columns).sort_values(ascending=Fa
 coef.plot(kind='bar', title="Feature Importance")
 plt.show()
 
-Algorithms=["Lasso", "Decision Tree", "Random Forest"]
-cross_validation_score=[lassoCV, DT_CV, RF_CV]
-plt.bar(Algorithms, cross_validation_score)
-plt.xlabel('Algorithms')
-plt.ylabel('cross validation score')
-plt.title('Model Accuracy Comparison')
-plt.show()
-
